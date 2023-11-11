@@ -6,16 +6,16 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 08:46:54 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/20 11:57:59 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:58:14 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+#include	"libft.h"
+
+int	ft_isalnum(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))
-	{
 		return (1);
-	}
 	return (0);
 }

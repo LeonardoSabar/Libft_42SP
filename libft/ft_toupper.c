@@ -6,13 +6,15 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:41:39 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/21 15:10:59 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/06 08:00:06 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(char c)
+#include	"libft.h"
+
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
+		c -= 32;
 	return (c);
 }

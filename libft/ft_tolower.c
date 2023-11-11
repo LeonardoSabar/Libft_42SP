@@ -6,13 +6,15 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:16:29 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/21 15:06:30 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:59:59 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(char c)
+#include	"libft.h"
+
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c += 32);
+		c += 32;
 	return (c);
 }

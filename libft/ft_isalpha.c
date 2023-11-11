@@ -6,15 +6,15 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:19:27 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/25 14:35:11 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:58:22 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+#include	"libft.h"
+
+int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-	{
-		return (1024);
-	}
+		return (1);
 	return (0);
 }

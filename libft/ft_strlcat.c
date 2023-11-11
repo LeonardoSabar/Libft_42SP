@@ -6,7 +6,7 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 18:59:27 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/23 10:07:34 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:32:16 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	dest[dest_len + idx] = '\0';
 	if (size < dest_len)
-	{
 		return (src_len + size);
-	}
 	else
 		return (src_len + dest_len);
 }

@@ -6,7 +6,7 @@
 #    By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/20 08:35:36 by leobarbo          #+#    #+#              #
-#    Updated: 2023/10/25 10:50:08 by leobarbo         ###   ########.fr        #
+#    Updated: 2023/11/07 19:16:16 by leobarbo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,8 @@ SRCS := ft_atoi.c\
 		ft_strmapi.c\
 		ft_striteri.c\
 		ft_strtrim.c\
+		ft_itoa.c\
+		ft_split.c\
 
 OBJS := $(SRCS:.c=.o)
 

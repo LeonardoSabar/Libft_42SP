@@ -6,7 +6,7 @@
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:31:58 by leobarbo          #+#    #+#             */
-/*   Updated: 2023/10/24 18:06:19 by leobarbo         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:49:47 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		str_final[idx] = f(idx, s[idx]);
 		idx++;
 	}
-	str_final[idx] = '\0';
 	return (str_final);
 }
