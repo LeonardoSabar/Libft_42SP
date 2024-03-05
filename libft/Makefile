@@ -6,7 +6,7 @@
 #    By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/20 08:35:36 by leobarbo          #+#    #+#              #
-#    Updated: 2023/11/07 19:16:16 by leobarbo         ###   ########.fr        #
+#    Updated: 2024/03/05 13:16:56 by leobarbo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,15 @@ SRCS := ft_atoi.c\
 		ft_strtrim.c\
 		ft_itoa.c\
 		ft_split.c\
+		ft_lstnew.c \
+		ft_lstmap.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c
 
 OBJS := $(SRCS:.c=.o)
 
@@ -68,10 +77,10 @@ $(NAME): $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
-	
+
 fclean: clean
 	$(RM) $(NAME)
-	
+
 re: fclean all
 
 .PHONY: all clean fclean re
