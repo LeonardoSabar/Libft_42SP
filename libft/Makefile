@@ -6,7 +6,7 @@
 #    By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/20 08:35:36 by leobarbo          #+#    #+#              #
-#    Updated: 2024/03/05 14:42:22 by leobarbo         ###   ########.fr        #
+#    Updated: 2024/03/05 14:49:45 by leobarbo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -126,13 +126,13 @@ define comp_objs
 	$(SLEEP)
 	printf " $(DARK_BLUE) 🤔 Loading libft: $(YELLOW) %d%%\r$(FCOLOR)" $$(echo $$(($(COUNT) * 100 / $(words $(SRCS)))))
 	@if [ $(COUNT) -eq $(words $(SRCS)) ]; then \
-		printf "\n"; \
+		printf "$(GREEN)  🙂 Libft is ready!\n"; \
 	fi
 endef
 
-define comp_static_library
-	printf "$(GREEN)  🙂 Libft is ready!\n$(RESET)"
-endef
+# define comp_static_library
+# 	printf "$(GREEN)  🙂 Libft is ready!\n$(RESET)"
+# endef
 
 #! ******************************************************************************#
 #                                   TARGETS                                      #
